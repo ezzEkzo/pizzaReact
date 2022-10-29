@@ -8,21 +8,27 @@ import PizzaBlock from './components/PizzaBlock';
 
 export default function App() {
   return (
-    <div class='wrapper'>
+    <div className='wrapper'>
       <Header />
-      <div class='content'>
-        <div class='container'>
-          <div class='content__top'>
+      <div className='content'>
+        <div className='container'>
+          <div className='content__top'>
             <Categories />
             <Sort />
           </div>
-          <h2 class='content__title'>Все пиццы</h2>
-          <div class='content__items'>
+          <h2 className='content__title'>Все пиццы</h2>
+          <div className='content__items'>
             <PizzaBlock title='Мексиканская' price='350' />
-            <PizzaBlock />
+            <PizzaBlock title='Мясная' price='300' />
           </div>
         </div>
       </div>
     </div>
   );
 }
+
+// Как пушить через консоль -
+
+// - git add . - собирает все вместе
+// - git commit -m "title" - вносит все изменения
+// - git push Pizza master - пушит на указанную ветку
