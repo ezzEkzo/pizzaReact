@@ -9,7 +9,7 @@
     align-items: center;
     justify-content: space-between;
 
-    @media (max-width: 645px) {
+    @media (max-width: 855px) {
       flex-direction: column;
 
       .header__cart {
@@ -20,6 +20,7 @@
 
   &__logo {
     display: flex;
+    margin-bottom: 20px;
 
     img {
       margin-right: 15px;
