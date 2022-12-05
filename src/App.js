@@ -8,6 +8,9 @@ import Cart from './pages/Cart';
 import NotFound from './pages/NotFound';
 // import NotFoundBlock from './components/NotFoundBlock';
 
+import { useSelector, useDispatch } from 'react-redux';
+import { decrement, increment } from './redux/slices/filterSlice';
+
 export const SearchContext = React.createContext();
 
 export default function App() {
