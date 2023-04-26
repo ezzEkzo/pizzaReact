@@ -39,6 +39,7 @@ const Home = () => {
     const sortBy = sortType.sortProperty;
 
     const category = categoryId > 0 ? `category=${categoryId}` : ''; // логика фильтрации (повторить)
+
     const search = searchValue ? `&search=${searchValue}` : '';
 
     axios
@@ -52,6 +53,12 @@ const Home = () => {
 
     window.scrollTo(0, 0); // возвращает на самый верх страницы
   }, [categoryId, sortType, searchValue, currentPage]);
+
+  // React.useEffect(() => {
+  //   const queryString = qs.stringify({
+  //
+  //   })
+  // },[categoryId, sortType, searchValue, currentPage]);
 
   const pizzas = items.map((obj) => <PizzaBlock key={obj.id} {...obj} />); // логика для отображения пицц ст 42
 
